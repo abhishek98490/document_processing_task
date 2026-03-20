@@ -2,8 +2,7 @@ import os
 import chromadb
 from chromadb.utils import embedding_functions
 from src.logging import logging
-
-DISTANCE_METRIC = os.environ.get("CHROMA_DISTANCE", "cosine")
+from src.config import DISTANCE_METRIC
 
 
 class Chroma_database():
